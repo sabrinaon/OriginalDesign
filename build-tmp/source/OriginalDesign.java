@@ -14,25 +14,24 @@ import java.io.IOException;
 
 public class OriginalDesign extends PApplet {
 
-
-public void setup() {
+public void setup() 
+{
 	size(300,350);
 	background(255);
 }
-
-public void draw() {
+public void draw() 
+{
   racket();
   strings();
   frame();
   grip();
 }
-
-public void racket() {
+public void racket() 
+{
 	fill(173,255,47);
 	strokeWeight(1);
 	ellipse(150,140,170,200);
 }
-
 public void strings()
 {
 	strokeWeight(2);
@@ -49,17 +48,16 @@ public void strings()
 		line(x, 30, x, 230);
 		x = x + 10;
 	}
-	
 }
-
-public void frame(){
+public void frame()
+{
 	noFill();
 	strokeWeight(8);
 	stroke(10);
 	ellipse(150,140,170,200);
 }
-
-public void grip() {
+public void grip() 
+{
 	stroke(51);
 	strokeWeight(20);
   	line(150,250,150,350);

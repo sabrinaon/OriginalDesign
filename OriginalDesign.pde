@@ -1,22 +1,21 @@
-
-void setup() {
+void setup() 
+{
 	size(300,350);
 	background(255);
 }
-
-void draw() {
+void draw() 
+{
   racket();
   strings();
   frame();
   grip();
 }
-
-void racket() {
+void racket() 
+{
 	fill(173,255,47);
 	strokeWeight(1);
 	ellipse(150,140,170,200);
 }
-
 void strings()
 {
 	strokeWeight(2);
@@ -33,17 +32,16 @@ void strings()
 		line(x, 30, x, 230);
 		x = x + 10;
 	}
-	
 }
-
-void frame(){
+void frame()
+{
 	noFill();
 	strokeWeight(8);
 	stroke(10);
 	ellipse(150,140,170,200);
 }
-
-void grip() {
+void grip() 
+{
 	stroke(51);
 	strokeWeight(20);
   	line(150,250,150,350);
